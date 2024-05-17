@@ -3,7 +3,7 @@ import React from "react";
 const Icon = ({ name, width, height }) => (
   <svg className={`icon icon-${name}`} style={{ width, height }}>
     <use
-      xlink:href={`${process.env.PUBLIC_URL}/images/sprite.svg#${name}`}
+      xlinkHref={`images/sprite.svg#${name}`}
     ></use>
   </svg>
 );

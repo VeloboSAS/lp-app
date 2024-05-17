@@ -1,15 +1,14 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import logo from "../../images/linkin-park.jpg"
+import logo from "../../images/logo.webp";
 
+const Logo = ({ onClick = () => {} }) => (
+  <div className="logo">
+    <Link onClick={onClick} to="/">
+      <img src={logo} alt="oxxxymiron" />
+    </Link>
+  </div>
+);
 
-
-const Logo = () => (<div className='logo'>
-        <NavLink to="/">
-            <img src={logo} alt="Linkin Park"/>
-        </NavLink>
-    </div>  );
-
- 
 export default Logo;
